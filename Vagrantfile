@@ -51,7 +51,7 @@ Vagrant.configure("2") do |config|
       v.memory            = 4096
       v.cpus              = 2
       v.graphics_type     = "spice"   # snappy desktop (Xfce already inside the box)
-      v.video_type        = "qxl"
+      v.video_type        = "virtio"
       v.storage_pool_name = POOL_NAME
     end
     # Make /vagrant visible from the Xfce desktop and file manager. Idempotent.
